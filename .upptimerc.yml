@@ -6,10 +6,12 @@ sites:
   # Para prod, ver repomind-dev/upptime-prod (criado no GO_LIVE).
   - name: Dashboard
     url: https://qa.repomind.dev
+    icon: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png
     headers:
       - "x-vercel-protection-bypass: $VERCEL_BYPASS_QA"
   - name: API
     url: https://api.qa.repomind.dev
+    icon: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png
 
 status-website:
   cname: status-qa.repomind.dev
