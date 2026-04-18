@@ -1,58 +1,102 @@
-/* RepoMind Status — identidade visual alinhada com o dashboard/landing */
+/* RepoMind Status — alinhado com a landing/dashboard.
+   Upptime permite override de CSS variables + regras arbitrarias.
+   Mirror de apps/web/app/globals.css (.dark). */
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 
 :root {
-  /* Paleta RepoMind (espelha apps/web/app/globals.css .dark) */
+  /* ── Cores RepoMind ────────────────────────────────────────── */
   --body-background-color: #0a0b10;
   --body-text-color: #eae6dd;
 
-  /* Superfícies elevadas */
   --card-background-color: #0d0d12;
   --card-border-color: #1c1c28;
 
-  /* Navegação */
   --nav-background-color: #08090d;
-  --nav-border-bottom-color: #1c1c28;
+  --nav-border-bottom-color: transparent;
   --nav-current-border-bottom-color: #00e676;
 
-  /* Estados: up / down / degraded */
   --up-border-left-color: #00e676;
   --down-border-left-color: #f87171;
   --down-background-color: #1f0a10;
   --degraded-border-left-color: #f59e0b;
 
-  /* Tags (badges de status) */
   --tag-color: #0a0b10;
   --tag-up-background-color: #00e676;
   --tag-down-background-color: #f87171;
   --tag-degraded-background-color: #f59e0b;
 
-  /* Indicador de mudança */
   --change-background-color: #f59e0b;
 
-  /* Botões (error + submit) */
-  --error-button-border-color: #1c1c28;
+  --error-button-border-color: transparent;
   --error-button-background-color: #00e676;
   --error-button-color: #0a0b10;
-  --submit-button-border-color: #1c1c28;
+  --submit-button-border-color: transparent;
   --submit-button-background-color: #00e676;
   --submit-button-color: #0a0b10;
 
-  /* Gráficos */
-  --graph-opacity: 0.9;
+  --graph-opacity: 1;
   --graph-filter: none;
+
+  /* Custom tokens */
+  --rm-accent: #00e676;
+  --rm-text: #eae6dd;
+  --rm-subtle: #9795a8;
+  --rm-muted-dim: #78768a;
+  --rm-border: #1c1c28;
+  --rm-surface: #0d0d12;
 }
 
-/* Tipografia — DM Sans no corpo, JetBrains Mono em código */
-body,
-html {
+/* ── Fundo com atmosfera sutil (verde radial no topo) ────────── */
+body {
   font-family:
     "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  background:
+    radial-gradient(
+      ellipse 70% 40% at 50% -10%,
+      rgba(0, 230, 118, 0.08) 0%,
+      transparent 70%
+    ),
+    #0a0b10 !important;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--rm-text);
 }
 
+/* ── Tipografia display (Syne) pras headings ─────────────────── */
+h1,
+h2,
+h3 {
+  font-family: "Syne", "DM Sans", sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--rm-text);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+/* Paragrafos mais suaves pra hierarquia */
+p {
+  color: var(--rm-subtle);
+  line-height: 1.6;
+}
+
+/* ── Mono onde precisar ──────────────────────────────────────── */
 code,
 pre,
 kbd,
@@ -60,20 +104,129 @@ samp {
   font-family:
     "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     monospace;
+  font-size: 0.9em;
 }
 
-/* Selection com verde da marca */
+/* ── Navegação — logo + links ───────────────────────────────── */
+nav {
+  border-bottom: 1px solid var(--rm-border) !important;
+  backdrop-filter: blur(8px);
+  background-color: rgba(8, 9, 13, 0.8) !important;
+}
+
+nav a {
+  color: var(--rm-subtle);
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: var(--rm-text);
+}
+
+/* Underline ativa com verde mais grosso */
+nav a[aria-current="page"] {
+  border-bottom: 2px solid var(--rm-accent) !important;
+}
+
+/* ── Cards (endpoints) — bordas refinadas + hover ───────────── */
+[class*="card"],
+.card,
+.status-card,
+.live-status-card {
+  background-color: var(--rm-surface) !important;
+  border: 1px solid var(--rm-border) !important;
+  border-radius: 12px !important;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+[class*="card"]:hover {
+  border-color: #2a2a3a !important;
+}
+
+/* Borda esquerda mais grossa nos estados */
+[class*="up"] {
+  border-left-width: 3px;
+}
+
+/* ── Links com verde da marca ────────────────────────────────── */
+a {
+  color: var(--rm-accent);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+a[aria-current="page"]:hover {
+  opacity: 1;
+}
+
+/* ── Seleção ─────────────────────────────────────────────────── */
 ::selection {
   background-color: rgba(0, 230, 118, 0.25);
   color: #eae6dd;
 }
 
-/* Links com hover no verde da marca */
-a {
-  color: #00e676;
-  text-decoration: none;
-  transition: opacity 0.15s ease;
+/* ── Botões — verde solido, preto por dentro ─────────────────── */
+button,
+[type="button"],
+[type="submit"] {
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  letter-spacing: -0.01em;
+  transition:
+    opacity 0.15s ease,
+    transform 0.1s ease;
 }
-a:hover {
-  opacity: 0.8;
+
+button:hover,
+[type="button"]:hover,
+[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ── Tags de status — peso e kerning ────────────────────────── */
+[class*="tag"] {
+  font-weight: 600 !important;
+  letter-spacing: 0.01em;
+  text-transform: lowercase;
+  font-size: 0.8em;
+  border-radius: 6px !important;
+}
+
+/* ── Footer discreto ─────────────────────────────────────────── */
+footer,
+[class*="footer"] {
+  color: var(--rm-muted-dim);
+  font-size: 0.85em;
+}
+
+footer a,
+[class*="footer"] a {
+  color: var(--rm-subtle);
+}
+
+/* ── Range selector (24h / 7d / 30d / 1y / all) ──────────────── */
+[class*="range"] button {
+  background: transparent !important;
+  color: var(--rm-subtle) !important;
+  border: 1px solid transparent !important;
+}
+
+[class*="range"] button[aria-pressed="true"],
+[class*="range"] .active {
+  color: var(--rm-text) !important;
+  background: var(--rm-surface) !important;
+  border-color: var(--rm-border) !important;
 }
