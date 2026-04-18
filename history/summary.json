@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Dashboard",
+    "url": "https://qa.repomind.dev",
+    "icon": "https://icons.duckduckgo.com/ip3/qa.repomind.dev.ico",
+    "slug": "dashboard",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 533,
+    "timeDay": 533,
+    "timeWeek": 533,
+    "timeMonth": 533,
+    "timeYear": 533,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "API",
+    "url": "https://api.qa.repomind.dev",
+    "icon": "https://icons.duckduckgo.com/ip3/api.qa.repomind.dev.ico",
+    "slug": "api",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 336,
+    "timeDay": 336,
+    "timeWeek": 336,
+    "timeMonth": 336,
+    "timeYear": 336,
+    "dailyMinutesDown": {}
+  }
+]
