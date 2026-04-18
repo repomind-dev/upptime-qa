@@ -10,13 +10,13 @@
     "uptimeWeek": "0.00%",
     "uptimeMonth": "0.00%",
     "uptimeYear": "0.00%",
-    "time": 154,
-    "timeDay": 154,
-    "timeWeek": 154,
-    "timeMonth": 154,
-    "timeYear": 154,
+    "time": 164,
+    "timeDay": 164,
+    "timeWeek": 164,
+    "timeMonth": 164,
+    "timeYear": 164,
     "dailyMinutesDown": {
-      "2026-04-18": 30
+      "2026-04-18": 36
     }
   },
   {
@@ -30,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1229,
-    "timeDay": 1229,
-    "timeWeek": 1229,
-    "timeMonth": 1229,
-    "timeYear": 1229,
+    "time": 996,
+    "timeDay": 996,
+    "timeWeek": 996,
+    "timeMonth": 996,
+    "timeYear": 996,
     "dailyMinutesDown": {}
   },
   {
@@ -43,16 +43,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/qa.repomind.dev.ico",
     "slug": "dashboard-qa",
     "status": "up",
-    "uptime": "0.53%",
-    "uptimeDay": "0.53%",
-    "uptimeWeek": "0.53%",
-    "uptimeMonth": "0.53%",
-    "uptimeYear": "0.53%",
-    "time": 1001,
-    "timeDay": 1001,
-    "timeWeek": 1001,
-    "timeMonth": 1001,
-    "timeYear": 1001,
+    "uptime": "16.98%",
+    "uptimeDay": "16.98%",
+    "uptimeWeek": "16.98%",
+    "uptimeMonth": "16.98%",
+    "uptimeYear": "16.98%",
+    "time": 1399,
+    "timeDay": 1399,
+    "timeWeek": 1399,
+    "timeMonth": 1399,
+    "timeYear": 1399,
     "dailyMinutesDown": {
       "2026-04-18": 30
     }
@@ -68,11 +68,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 162,
-    "timeDay": 162,
-    "timeWeek": 162,
-    "timeMonth": 162,
-    "timeYear": 162,
+    "time": 188,
+    "timeDay": 188,
+    "timeWeek": 188,
+    "timeMonth": 188,
+    "timeYear": 188,
     "dailyMinutesDown": {}
   }
 ]
