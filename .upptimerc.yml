@@ -15,7 +15,7 @@ status-website:
   cname: status-qa.repomind.dev
   logoUrl: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png
   favicon: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png
-  themeUrl: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/assets/repomind-theme.css
+  themeUrl: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/assets/repomind-theme.css?v=2
   name: RepoMind Status (QA)
   introTitle: "**Status QA** — ambiente de pré-produção do RepoMind, atualizado a cada 5 minutos."
   introMessage: Página interna de status do ambiente QA. Para o status de produção, veja [status.repomind.dev](https://status.repomind.dev). Problemas? Abra uma [issue](https://github.com/repomind-dev/upptime-qa/issues).
