@@ -12,7 +12,7 @@ sites:
     url: https://api.qa.repomind.dev
 
 status-website:
-  cname: status.qa.repomind.dev
+  cname: status-qa.repomind.dev
   logoUrl: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png
   favicon: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png
   themeUrl: https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/assets/repomind-theme.css
