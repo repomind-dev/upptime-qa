@@ -22,19 +22,19 @@
     "url": "https://api.qa.repomind.dev",
     "icon": "https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png",
     "slug": "api",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 246,
-    "timeDay": 318,
-    "timeWeek": 246,
-    "timeMonth": 246,
-    "timeYear": 246,
+    "status": "up",
+    "uptime": "97.37%",
+    "uptimeDay": "97.20%",
+    "uptimeWeek": "97.37%",
+    "uptimeMonth": "97.37%",
+    "uptimeYear": "97.37%",
+    "time": 238,
+    "timeDay": 276,
+    "timeWeek": 238,
+    "timeMonth": 238,
+    "timeYear": 238,
     "dailyMinutesDown": {
-      "2026-04-19": 0
+      "2026-04-19": 40
     }
   }
 ]
