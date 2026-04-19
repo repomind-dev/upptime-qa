@@ -11,7 +11,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 1865,
-    "timeDay": 1865,
+    "timeDay": 2920,
     "timeWeek": 1865,
     "timeMonth": 1865,
     "timeYear": 1865,
@@ -22,17 +22,19 @@
     "url": "https://api.qa.repomind.dev",
     "icon": "https://raw.githubusercontent.com/repomind-dev/upptime-qa/master/logo.png",
     "slug": "api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 241,
-    "timeDay": 241,
-    "timeWeek": 241,
-    "timeMonth": 241,
-    "timeYear": 241,
-    "dailyMinutesDown": {}
+    "time": 246,
+    "timeDay": 318,
+    "timeWeek": 246,
+    "timeMonth": 246,
+    "timeYear": 246,
+    "dailyMinutesDown": {
+      "2026-04-19": 0
+    }
   }
 ]
